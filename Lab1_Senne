@@ -11,8 +11,10 @@ public class Lab1_Senne {
     
     public static void main(String[] args) {
     	Scanner s= new Scanner(System.in);
-        System.out.println("Digite Seu Nome");
-        String nome = s.nextLine(); 
-    	System.out.printf("Seu primeiro programa em Java,%s!\n",nome);
+        System.out.println("Digite o raio do circulo:");
+        double raio = s.nextFloat();
+        double area = (Math.PI)*(Math.pow(raio,2));
+        System.out.printf("Area = %.1f ",area);
     }
 }
+
